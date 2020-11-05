@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+.heading {
+  font-size: 3.2rem;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 92rem;
+}
+
+@media (max-width: 37.5em) {
+  .row {
+    margin: 0 20px;
+    max-width: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

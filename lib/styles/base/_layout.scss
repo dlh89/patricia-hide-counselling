@@ -1,0 +1,11 @@
+.row {
+    margin: 0 auto;
+    max-width: 92rem;
+}
+
+@include respond(mobile) {
+    .row  {
+        margin: 0 $mobile-margin;
+        max-width: none;
+    }
+}
