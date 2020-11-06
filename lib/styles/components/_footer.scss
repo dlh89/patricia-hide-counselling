@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 66px;
+    background: $dark-grey;
+    color: $off-white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer__brand {
+    float: left;
+}
+
+.footer__nav {
+    float: right;
+}
+
+.footer__nav li {
+    margin-bottom: 6px;
+}
+
+
+@include respond(mobile) {
+    .footer__brand,
+    .footer__nav {
+        float: none;
+    }
+
+    .footer__brand {
+        margin-bottom: 38px;
+    }
+
+    .footer__nav li {
+        margin-bottom: 24px;
+    }
+}

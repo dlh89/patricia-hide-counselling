@@ -1,0 +1,47 @@
+.nav {
+    padding: 20px 0;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 24px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav__brand {
+    float: left;
+}
+
+.nav ul {
+    list-style: none;
+    float: right;
+}
+
+.nav li {
+    float: left;
+}
+.nav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+@include respond(mobile) {
+    .nav__brand,
+    .nav ul,
+    .nav li {
+        float: none;
+    }
+    
+    .nav__brand {
+        margin-bottom: 38px;
+    }
+
+    .nav li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}

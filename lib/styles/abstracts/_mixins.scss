@@ -1,3 +1,11 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 // Media queries
 @mixin respond($breakpoint) {
     @if $breakpoint == mobile {

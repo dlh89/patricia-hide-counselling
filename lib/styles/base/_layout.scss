@@ -3,9 +3,17 @@
     max-width: 92rem;
 }
 
-@include respond(mobile) {
+.cf {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+@include respond(tab-land) {
     .row  {
         margin: 0 $mobile-margin;
-        max-width: none;
     }
 }
