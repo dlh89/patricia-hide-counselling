@@ -1,0 +1,56 @@
+.profile {
+    background-color: #333; // TODO real colour
+    color: #fff;
+    padding: 50px;
+}
+
+.profile__image-container {
+    float: left;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.profile__image-container img {
+    filter: grayscale(100%);
+    width: 300px;
+}
+
+.profile__text {
+    float: left;
+    width: calc(100% - (300px + 30px)); // subtract profile image and margin
+    font-size: 2.6rem;
+}
+
+
+@media (max-width: 833px) {
+    .profile__image-container,
+    .profile__text {
+        float: none;
+        width: 100%;
+    }
+
+    .profile__image-container
+    {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding-top: 100%; // use 100% padding to maintain 1:1 aspect ratio
+    }
+
+    .profile__image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    
+    .profile__image-container {
+        margin-bottom: 30px;
+    }
+}
