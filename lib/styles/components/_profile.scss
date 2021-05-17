@@ -2,6 +2,9 @@
     background-color: $purple;
     color: #fff;
     padding: 50px;
+    box-shadow: $box-shadow;
+    border-radius: 6px;
+    border-image: linear-gradient(90deg, rgba(108,83,160,1) 0%, rgba(155,83,160,1) 100%);
 }
 
 .profile__image-container {
@@ -23,6 +26,10 @@
     float: left;
     width: calc(100% - (300px + 30px)); // subtract profile image and margin
     font-size: 2.6rem;
+    color: #cacaca;
+}
+.profile__text .heading-2 {
+    color: #fff;
 }
 
 .profile p {
