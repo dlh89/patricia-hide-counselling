@@ -298,4 +298,21 @@ section {
   border-radius: 30px;
 }
 
+.quote {
+  font-size: 3.2rem;
+  margin: 64px 0;
+  color: #464646;
+}
+
+.quote__attribution {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d1d11;
+  text-transform: uppercase;
+}
+
+.quote__attribution::before {
+  content: "– ";
+}
+
 /*# sourceMappingURL=style.css.map */
