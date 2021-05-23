@@ -315,4 +315,40 @@ section {
   content: "– ";
 }
 
+.col-cta {
+  display: flex;
+}
+
+.col-cta__col {
+  width: 33.3333%;
+}
+
+.col-cta__col:not(:last-child) {
+  margin-right: 18px;
+  border-right: 1px solid #d8d8d8;
+}
+
+.col-cta__heading {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 833px) {
+  .col-cta {
+    flex-direction: column;
+  }
+
+  .col-cta__col {
+    width: 100%;
+  }
+
+  .col-cta__col:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 17px;
+    border-right: none;
+    border-bottom: 1px solid #d8d8d8;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
