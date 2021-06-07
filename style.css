@@ -60,7 +60,7 @@ html {
 .heading {
   font-size: 3.2rem;
   font-weight: 800;
-  margin-bottom: 26px;
+  margin-bottom: 12px;
 }
 
 .heading-2 {
@@ -118,6 +118,17 @@ section {
   padding: 20px 0;
 }
 
+.nav__brand-container {
+  float: left;
+  display: flex;
+  height: 61px;
+  align-items: center;
+}
+
+.nav__brand-container svg {
+  margin-right: 11px;
+}
+
 .nav a {
   display: block;
   position: relative;
@@ -160,15 +171,29 @@ section {
     float: none;
   }
 
-  .nav__brand {
-    margin-bottom: 38px;
+  .nav__brand-container {
+    float: none;
+    margin-bottom: 0;
   }
 
-  .nav li:not(:last-child) {
+  .nav li {
     margin-right: 0;
     margin-bottom: 24px;
   }
 }
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner__image {
+  margin-right: 34px;
+}
+
+.banner__strapline {
+  font-size: 2rem;
+}
+
 .footer {
   margin-top: 62px;
   padding-top: 46px;
