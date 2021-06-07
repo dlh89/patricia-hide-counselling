@@ -383,5 +383,11 @@ section {
     border-bottom: 1px solid #d8d8d8;
   }
 }
+.coming-soon {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 170px;
+}
 
 /*# sourceMappingURL=style.css.map */
