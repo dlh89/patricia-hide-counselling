@@ -1,6 +1,11 @@
 .banner {
+    background-color: $soft-green;
+}
+
+.banner__inner {
     display: flex;
     align-items: center;
+    padding: 24px 0;
 }
 
 .banner__image {
