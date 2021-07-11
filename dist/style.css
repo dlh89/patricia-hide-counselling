@@ -69,7 +69,7 @@ p {
   margin-bottom: 18px; }
 
 section {
-  margin-bottom: 24px; }
+  margin-bottom: 44px; }
 
 .strong-uppercase {
   font-weight: 700;
@@ -156,7 +156,7 @@ section {
 .banner__inner {
   display: flex;
   align-items: center;
-  padding: 24px 0; }
+  padding: 40px 0; }
 
 .banner__image {
   margin-right: 34px; }
