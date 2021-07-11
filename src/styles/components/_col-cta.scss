@@ -16,6 +16,15 @@
     margin-bottom: 17px;
 }
 
+.col-cta__icon {
+    text-align: center;
+}
+
+.col-cta__icon svg {
+    fill: $purple;
+    width: 40px;
+    height: 40px;
+}
 
 @media (max-width: 833px) {
     .col-cta {
