@@ -1,1 +1,1 @@
-console.log('js loaded');
+import svgxuse from 'svgxuse'; // polyfill to load svgs from external URI (unsupported by IE)
