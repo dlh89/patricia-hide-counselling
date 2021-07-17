@@ -52,12 +52,14 @@ html {
 .heading {
   font-size: 3.2rem;
   font-weight: 800;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  color: #2b2b2b; }
 
 .heading-2 {
   font-size: 2.4rem;
   font-weight: 800;
-  margin-bottom: 22px; }
+  margin-bottom: 22px;
+  color: #2b2b2b; }
 
 body {
   color: #333;
@@ -200,13 +202,11 @@ section {
     margin-bottom: 24px; } }
 
 .profile {
-  background-color: #6c53a0;
-  color: #fff;
-  padding: 50px;
+  background-color: #e0e0e0;
+  padding: 38px 50px 50px 50px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
-  -o-border-image: linear-gradient(90deg, #6c53a0 0%, #9b53a0 100%);
-     border-image: linear-gradient(90deg, #6c53a0 0%, #9b53a0 100%); }
+  border-top: 12px solid #74b93d; }
 
 .profile__image-container {
   float: left;
@@ -224,10 +224,10 @@ section {
   float: left;
   width: calc(100% - (300px + 30px));
   font-size: 2.6rem;
-  color: #cacaca; }
+  color: #333; }
 
 .profile__text .heading-2 {
-  color: #fff; }
+  color: #2b2b2b; }
 
 .profile p {
   font-size: 20px; }
@@ -253,7 +253,7 @@ section {
     margin-bottom: 30px; } }
 
 .cta {
-  background-color: #c0935a;
+  background-color: #74b93d;
   color: #fff;
   padding: 50px;
   border-radius: 6px;
@@ -272,7 +272,8 @@ section {
   font-weight: 700;
   padding: 12px 16px;
   border-radius: 30px;
-  padding-left: 47px; }
+  padding-left: 47px;
+  letter-spacing: 2px; }
 
 .cta__phone-icon svg {
   position: absolute;
@@ -315,13 +316,14 @@ section {
 .col-cta__heading {
   text-align: center;
   font-weight: 700;
-  margin-bottom: 17px; }
+  margin-bottom: 17px;
+  color: #2b2b2b; }
 
 .col-cta__icon {
   text-align: center; }
 
 .col-cta__icon svg {
-  fill: #6c53a0;
+  fill: #74b93d;
   width: 40px;
   height: 40px; }
 
