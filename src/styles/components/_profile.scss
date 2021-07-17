@@ -64,3 +64,9 @@
         margin-bottom: 30px;
     }
 }
+
+@include respond(mobile) {
+    .profile {
+        padding: 28px 30px 30px 30px;
+    }
+}

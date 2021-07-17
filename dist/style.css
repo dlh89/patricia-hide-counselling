@@ -341,6 +341,10 @@ section:last-of-type {
   .profile__image-container {
     margin-bottom: 30px; } }
 
+@media (max-width: 37.5em) {
+  .profile {
+    padding: 28px 30px 30px 30px; } }
+
 .cta {
   background-color: #74b93d;
   color: #fff;
