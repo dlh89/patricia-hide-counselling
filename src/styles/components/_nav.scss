@@ -23,6 +23,10 @@
     height: 45px;
 }
 
+.nav .nav__brand-link {
+    display: inline-block;
+}
+
 .nav a {
     display: block;
     position: relative;
@@ -63,11 +67,11 @@
     background-color: transparent;
     border: none;
     display: none;
-    height: 2.3rem;
+    height: 2.8rem;
     margin: 1.6rem;
     position: absolute;
     right: 22px;
-    width: 2.4rem;
+    width: 2.9rem;
     z-index: 99;
 
     @include respond(tab-port) {

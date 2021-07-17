@@ -120,6 +120,9 @@ section:last-of-type {
   width: 45px;
   height: 45px; }
 
+.nav .nav__brand-link {
+  display: inline-block; }
+
 .nav a {
   display: block;
   position: relative;
@@ -156,11 +159,11 @@ section:last-of-type {
   background-color: transparent;
   border: none;
   display: none;
-  height: 2.3rem;
+  height: 2.8rem;
   margin: 1.6rem;
   position: absolute;
   right: 22px;
-  width: 2.4rem;
+  width: 2.9rem;
   z-index: 99; }
   @media (max-width: 56.25em) {
     .nav__toggle-button {
@@ -246,6 +249,14 @@ section:last-of-type {
 
 .banner__strapline {
   font-size: 2rem; }
+
+@media (max-width: 37.5em) {
+  .banner__inner {
+    flex-direction: column;
+    text-align: center; }
+  .banner__image svg {
+    margin-right: 0;
+    margin-bottom: 34px; } }
 
 .footer {
   margin-top: 62px;
