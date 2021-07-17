@@ -29,6 +29,7 @@
     text-decoration: none;
     color: inherit;
 }
+.nav__current::after,
 .nav li:hover::after {
     content: "\00a0";
     position: absolute;

@@ -1,0 +1,17 @@
+.bullet-list {
+    margin-bottom: 18px;
+}
+
+.bullet-list li {
+    position: relative;
+    padding-left: 12px;
+}
+.bullet-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    background-color: $green;
+    width: 4px;
+    height: 4px;
+}

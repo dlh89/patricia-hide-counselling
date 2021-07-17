@@ -26,6 +26,9 @@ p {
 section {
     margin-bottom: 44px;
 }
+section:last-of-type {
+    margin-bottom: 94px;
+}
 
 .strong-uppercase {
     font-weight: 700;

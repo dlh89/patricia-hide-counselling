@@ -5,6 +5,7 @@
     padding: 50px;
     border-radius: 6px;
     box-shadow: $box-shadow;
+    text-align: center;
 }
 
 .cta__text
@@ -35,4 +36,5 @@
     left: 20px;
     width: 25px;
     height: 25px;
+    fill: $green;
 }
