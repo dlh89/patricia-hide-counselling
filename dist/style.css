@@ -120,9 +120,6 @@ section:last-of-type {
   width: 45px;
   height: 45px; }
 
-.nav .nav__brand-link {
-  display: inline-block; }
-
 .nav a {
   display: block;
   position: relative;
