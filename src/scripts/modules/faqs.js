@@ -1,6 +1,11 @@
-export default class Navigation {
+export default class Faqs {
     constructor() {
       const questions = document.querySelectorAll('.js-faq-question');
+
+      if (!questions.length){
+        // no FAQs on this page
+        return;
+      }
 
       // Give the first answer a px height as it starts open and transition won't work on non px value
       const answers = document.querySelectorAll('.js-faq-answer');
