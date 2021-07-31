@@ -68,5 +68,7 @@
 @include respond(mobile) {
     .profile {
         padding: 28px 30px 30px 30px;
+        margin-left: -$mobile-margin;
+        margin-right: -$mobile-margin;
     }
 }

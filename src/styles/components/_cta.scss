@@ -38,3 +38,11 @@
     height: 25px;
     fill: $green;
 }
+
+
+@include respond(tab-port) {
+    .cta {
+        margin-left: -$mobile-margin;
+        margin-right: -$mobile-margin;
+    }
+}
