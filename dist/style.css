@@ -356,7 +356,9 @@ section:last-of-type {
 
 @media (max-width: 37.5em) {
   .profile {
-    padding: 28px 30px 30px 30px; } }
+    padding: 28px 30px 30px 30px;
+    margin-left: -20px;
+    margin-right: -20px; } }
 
 .cta {
   background-color: #74b93d;
@@ -391,6 +393,11 @@ section:last-of-type {
   width: 25px;
   height: 25px;
   fill: #74b93d; }
+
+@media (max-width: 56.25em) {
+  .cta {
+    margin-left: -20px;
+    margin-right: -20px; } }
 
 .quote {
   font-size: 2.6rem;
@@ -461,4 +468,45 @@ section:last-of-type {
   background-color: #74b93d;
   width: 4px;
   height: 4px; }
+
+.faqs {
+  color: #fff;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 64px; }
+
+.faqs__faq:first-child .faqs__question {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.faqs__faq:last-child .faqs__answer {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; }
+
+.faqs__question {
+  font-size: 2.6rem;
+  padding: 22px 29px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-align: left;
+  font-family: "Comfortaa", arial;
+  cursor: pointer;
+  background-color: #6c53a0; }
+
+.faqs__answer {
+  max-height: 0;
+  padding: 0 29px;
+  overflow: hidden;
+  transition: max-height .25s ease-out;
+  background-color: #6c53a0;
+  margin-bottom: 1px; }
+
+.faqs__faq:first-child .faqs__answer {
+  max-height: inherit; }
+
+@media (max-width: 56.25em) {
+  .faqs {
+    margin-left: -20px;
+    margin-right: -20px; } }
 
