@@ -483,8 +483,10 @@ section:last-of-type {
   border-bottom-right-radius: 6px; }
 
 .faqs__question {
+  position: relative;
   font-size: 2.6rem;
   padding: 22px 29px;
+  padding-right: 60px;
   width: 100%;
   border: none;
   background-color: transparent;
@@ -504,6 +506,23 @@ section:last-of-type {
 
 .faqs__faq:first-child .faqs__answer {
   max-height: inherit; }
+
+.faqs__chevron {
+  position: absolute;
+  margin-top: 5px;
+  right: 29px;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+
+.faqs__faq--active .faqs__chevron {
+  -webkit-transform: none;
+          transform: none; }
 
 @media (max-width: 56.25em) {
   .faqs {

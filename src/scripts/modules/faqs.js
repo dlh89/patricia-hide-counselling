@@ -7,22 +7,36 @@ export default class Faqs {
         return;
       }
 
-      // Give the first answer a px height as it starts open and transition won't work on non px value
-      const answers = document.querySelectorAll('.js-faq-answer');
-      answers[0].style.maxHeight = `${answers[0].scrollHeight}px`;
+      // Expand the initial active faq
+      const activeFaq = document.querySelector('.faqs__faq--active');
+      this.expandFaq(activeFaq);
 
+      this.setUpFaqListeners(questions);
+    }
+
+    setUpFaqListeners(questions) {
       questions.forEach((question) => {
         question.addEventListener('click', () => {
-            this.hideActiveQuestions();
-            const associatedAnswer = question.nextElementSibling;
-            associatedAnswer.classList.add('faqs__answer--active');
-            associatedAnswer.style.maxHeight = `${associatedAnswer.scrollHeight}px`;
-            associatedAnswer.setAttribute('aria-hidden', 'false');
+            this.hideActiveFaqs();
+            const faq = question.parentElement;
+            this.expandFaq(faq);
         });
       });
     }
 
-    hideActiveQuestions() {
+    expandFaq(faq) {
+      const associatedAnswer = faq.querySelector('.js-faq-answer');
+      faq.classList.add('faqs__faq--active');
+      associatedAnswer.style.maxHeight = `${associatedAnswer.scrollHeight}px`;
+      associatedAnswer.setAttribute('aria-hidden', 'false');
+    }
+
+    hideActiveFaqs() {
+      const activeFaqs = document.querySelectorAll('.faqs__faq--active');
+      activeFaqs.forEach(function(faq) {
+        faq.classList.remove('faqs__faq--active');
+      });
+
       const answers = document.querySelectorAll('.js-faq-answer');
 
       answers.forEach(function(answer) {
