@@ -6,8 +6,10 @@
   "scripts": {
     "build": "webpack",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel build devserver"
+    "start": "npm-run-all --parallel build devserver",
+    "imagecompression": "node image-compression.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dlh89/patricia-hide-counselling.git"
@@ -26,6 +28,8 @@
     "babel-polyfill": "^6.26.0",
     "css-loader": "^0.28.11",
     "eslint-config-with-prettier": "^3.4.0",
+    "imagemin": "^8.0.0",
+    "imagemin-webp": "^6.0.0",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.5",
