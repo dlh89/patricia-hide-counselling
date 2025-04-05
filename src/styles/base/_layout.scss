@@ -1,3 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
 .row {
     margin: 0 auto;
     max-width: 92rem;

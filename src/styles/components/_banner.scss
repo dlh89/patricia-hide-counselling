@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .banner {
     // background-color: $soft-green;
     background: rgb(174,232,151);
