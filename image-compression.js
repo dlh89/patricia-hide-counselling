@@ -2,7 +2,7 @@ import imagemin from "imagemin";
 import imageminWebp from "imagemin-webp";
  
 const files = await imagemin(['images/*.{jpg,png}'], {
-	destination: 'dist/images',
+	destination: 'images',
 	plugins: [
 		imageminWebp({quality: 80}),
 	]

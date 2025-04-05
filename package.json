@@ -28,6 +28,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "serve": "webpack serve --mode development",
+    "serve-prod": "webpack serve --mode production",
     "imagecompression": "node image-compression.js"
   },
   "author": "",
