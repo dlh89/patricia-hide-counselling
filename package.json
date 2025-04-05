@@ -26,9 +26,8 @@
     "webpack-dev-server": "^5.2.1"
   },
   "scripts": {
-    "build": "webpack",
-    "serve": "webpack serve",
-    "start": "npm-run-all --parallel serve",
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode development",
     "imagecompression": "node image-compression.js"
   },
   "author": "",
