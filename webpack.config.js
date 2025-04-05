@@ -48,6 +48,7 @@ module.exports = (env, argv) => {
       new CopyWebpackPlugin({
         patterns: [
           { from: 'images', to: 'images' }, // copies images to /dist/images
+          { from: 'favicons', to: 'favicons' }, // copies favicons to /dist/favicons
         ],
       }),
     ],
