@@ -1,12 +1,9 @@
 const path = require('path');
 
-// include the js minification plugin
-const TerserWebpackPlugin = require('terser-webpack-plugin');
-
 // include the css extraction and minification plugins
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   return {
@@ -47,6 +44,11 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: 'what-to-expect/index.html',
         filename: 'what-to-expect/index.html',
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'images', to: 'images' }, // copies images to /dist/images
+        ],
       }),
     ],
     devServer: {
