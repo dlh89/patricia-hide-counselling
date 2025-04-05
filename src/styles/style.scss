@@ -1,18 +1,18 @@
-@import './third-party/reset';
+@use './abstracts/variables';
+@use './third-party/reset';
 
-@import './abstracts/mixins';
-@import './abstracts/variables';
+@use './abstracts/mixins';
 
-@import './base/base';
-@import './base/typography';
-@import './base/layout';
+@use './base/base';
+@use './base/typography';
+@use './base/layout';
 
-@import './components/nav';
-@import './components/banner';
-@import './components/footer';
-@import './components/profile';
-@import './components/cta';
-@import './components/quote';
-@import './components/col-cta';
-@import './components/bullet-list';
-@import './components/faqs';
+@use './components/nav';
+@use './components/banner';
+@use './components/footer';
+@use './components/profile';
+@use './components/cta';
+@use './components/quote';
+@use './components/col-cta';
+@use './components/bullet-list';
+@use './components/faqs';

@@ -1,3 +1,6 @@
+@use '../abstracts/variables' as *;
+@use "sass:color";
+
 html {
     font-size: 62.5%;
 }
@@ -6,5 +9,5 @@ a {
     color: $green;
 }
 a:visited {
-    color: darken($green, 10%);
+    color: color.adjust($green, $lightness: -10%)
 }
